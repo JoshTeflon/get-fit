@@ -1,6 +1,7 @@
 import { tomorrow } from '@/app/layout';
-import { socialsHeader } from '@/utils/data';
-import { SectionContent, Text } from '../interface';
+import { socialsHeader, socialsSlider } from '@/utils/data';
+import { ImageSlideProps } from '@/utils/types';
+import { ImageCard, SectionContent, Text } from '../interface';
 
 const Socials = () => {
   return (
@@ -16,6 +17,18 @@ const Socials = () => {
       </div>
       <div className='max-w-[30.5rem] -mt-8'>
         <SectionContent {...socialsHeader} />
+      </div>
+      <div className='flex space-x-5 mt-9'>
+        {
+          socialsSlider?.map((i: ImageSlideProps) => (
+            <ImageCard
+              key={i?.alt}
+              src={i?.src}
+              alt={i?.alt}
+              className='w-72 h-[17rem]'
+            />
+          ))
+        }
       </div>
     </section>
   );
