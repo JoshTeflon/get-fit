@@ -1,13 +1,15 @@
 import { tomorrow, raleway } from '@/app/layout';
 import { TitleContent } from '@/utils/types';
 import { aboutContent, aboutStats } from '@/utils/data';
-import { SectionContent, Text } from '../interface';
+import { SectionContent, Text, ClippedImage } from '../interface';
 
 const About = () => {
   return (
     <section className='side-space my-28 flex flex-col lg:flex-row'>
-      <div className='lg:w-1/2'></div>
-      <div className='lg:w-1/2'>
+      <div className='mb-16 lg:mb-0 w-full lg:w-1/2 flex justify-center lg:block'>
+        <ClippedImage />
+      </div>
+      <div className='w-full lg:w-1/2'>
         <SectionContent {...aboutContent} />
         <div className='flex space-x-7 mt-10'>
           {
