@@ -30,11 +30,11 @@ const Landing = () => {
                   viewBox="0 0 210 15"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className='w-[6.5rem] sm:w-32 md:w-[9.5rem] xl:w-52 self-end -mt-2'
+                  className='w-[6.5rem] sm:w-32 md:w-[9.5rem] xl:w-52 self-end -mt-2 text-primary'
                 >
                   <path
                     d="M6.5 8.21143C35.1198 8.21143 74.2448 7.66561 103.5 7.66561C120.117 7.66561 135.883 8.21143 152.5 8.21143C169.188 8.21143 188.272 5.23663 204 7.66561"
-                    stroke="#D8FF09"
+                    stroke="currentColor"
                     strokeWidth="11.84"
                     strokeLinecap="round"
                   />

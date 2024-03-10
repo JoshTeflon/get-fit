@@ -22,7 +22,7 @@ const About = () => {
                 >
                   {stat?.title}
                 </Text>
-                <Text as='p' className={`${raleway.className} text-white/70 font-semibold uppercase`}>
+                <Text as='p' className={`${raleway.className} text-text/70 font-semibold uppercase`}>
                   {stat?.content}
                 </Text>
               </div>

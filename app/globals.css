@@ -4,7 +4,14 @@
 
 :root {
   --clip-border-width: 0.0625rem;
+  --button-clip-path: polygon(0 0, 100% 0, 100% 45%, 85% 100%, 0 100%);
   --image-clip-path: polygon(0 0, 100% 0, 100% 85%, 80% 100%, 0 100%);
+}
+
+*,
+*::before,
+*::after {
+  @apply box-border;
 }
 
 @layer utilities {
@@ -19,13 +26,13 @@
   /* Cut Corner Button */ 
   .button-clip {
     @apply absolute z-10 top-0 bottom-0 left-0 right-0 m-[-0.4375rem] bg-primary w-full h-full inline-grid place-content-center;
-    clip-path: polygon(0 0, 100% 0, 100% 45%, 85% 100%, 0 100%);
+    clip-path: var(--button-clip-path);
   }
 
   .button-border-clip {
-    @apply relative w-full h-full bg-black isolate before:absolute before:content-[''] before:inset-0 before:bg-white before:z-[-2]
-            after:absolute after:content-[''] after:inset-0 after:bg-black after:z-[-1];
-    clip-path: polygon(0 0, 100% 0, 100% 45%, 85% 100%, 0 100%);
+    @apply relative w-full h-full bg-theme isolate before:absolute before:content-[''] before:inset-0 before:bg-text before:z-[-2]
+            after:absolute after:content-[''] after:inset-0 after:bg-theme after:z-[-1];
+    clip-path: var(--button-clip-path);
   }
   
   .button-border-clip::after {
@@ -44,8 +51,8 @@
   }
 
   .image-border-clip {
-    @apply relative w-full h-full bg-black isolate before:absolute before:content-[''] before:inset-0 before:bg-primary before:z-[-2]
-            after:absolute after:content-[''] after:inset-0 after:bg-black after:z-[-1];
+    @apply relative w-full h-full bg-theme isolate before:absolute before:content-[''] before:inset-0 before:bg-primary before:z-[-2]
+            after:absolute after:content-[''] after:inset-0 after:bg-theme after:z-[-1];
     clip-path: var(--image-clip-path);
   }
 

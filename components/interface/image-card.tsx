@@ -34,7 +34,7 @@ const ImageCard: React.FC<ImageCardProps> = ({ src, alt, width, height, header, 
           }
           {
             desc &&
-            <Text className={`${raleway.className} text-white/80`} as='p'>
+            <Text className={`${raleway.className} text-text/80`} as='p'>
               {desc}
             </Text>
           }
