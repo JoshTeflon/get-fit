@@ -64,4 +64,10 @@
                 var(--clip-border-width) calc(100% - var(--clip-border-width)));
     transition: clip-path 500ms;
   }
+
+  
+
+  .scrolling-wrapper {
+    -webkit-overflow-scrolling: touch;
+    }
 }

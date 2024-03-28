@@ -11,11 +11,6 @@ const config: Config = {
         "primary": "#D8FF09",
         "text": "#FFFFFF",
         "theme": "#000000"
-        //scheme options separated by one line
-        
-        // "primary": "#f2aa4cff",
-        // "text": "#FFFFFF",
-        // "theme": "#101820ff"
       }
   },
   plugins: [],

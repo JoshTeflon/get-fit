@@ -6,7 +6,8 @@ export const tomorrow = Tomorrow({ subsets: ["latin"], weight: ["400", "500", "6
 export const raleway = Raleway({ subsets: ["latin"], weight: ["400", "500", "600"] });
 export const dm_sans = DM_Sans({ subsets: ["latin"], weight: "500" });
 
-export const metadata: Metadata = {
+// export const metadata: Metadata = {
+const metadata: Metadata = {
   title: "Get Fit",
   description: "Get Fit...",
 };
