@@ -14,3 +14,10 @@ export interface ImageSlideProps {
   header?: string,
   desc?: string
 }
+
+export interface QouteContent {
+  comment: string
+  imgSrc: string | StaticImport
+  name: string
+  role?: string
+}

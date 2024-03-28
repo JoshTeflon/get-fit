@@ -11,7 +11,7 @@ const Button: React.FC<ButtonProps> = ({ children, className = '' }) => {
     <button
       className={classnames(
         className,
-        'relative mt-[0.4375rem] w-full max-w-32 lg:max-w-52 h-[3.125rem] text-black text-sm lg:text-base font-medium uppercase tracking-[-2%] isolate'
+        'relative mt-[0.4375rem] w-full max-w-32 lg:max-w-52 h-[3.125rem] text-theme text-sm lg:text-base font-medium uppercase tracking-[-2%] isolate'
       )}
     >
       <div className='button-clip'>

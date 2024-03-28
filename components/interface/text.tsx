@@ -21,7 +21,7 @@ const Text: React.FC<TextProps> = ({ as = 'p', children, size = 'base', classNam
         'text-xl md:text-[1.375rem] lg:text-2xl': size === '2xl',
         'text-2xl lg:text-3xl': size === '3xl',
         'text-2xl md:text-3xl lg:text-4xl': size === '4xl',
-        'text-2xl sm:text-3xl md:text-4xl xl:text-5xl !leading-snug': size === '5xl'
+        'text-2xl sm:text-4xl md:text-[2.75rem] xl:text-[3.125rem] !leading-snug': size === '5xl'
       })}
       {...rest}
     >

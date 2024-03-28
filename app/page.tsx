@@ -9,7 +9,7 @@ import Footer from '@/components/views/footer';
 
 export default function Home() {
   return (
-    <main className="bg-black">
+    <main>
       <Nav />
       <Landing />
       <InfiniteSlider />

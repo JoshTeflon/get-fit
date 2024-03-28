@@ -9,7 +9,7 @@ const infiniteSlider = () => {
       {
         programServices?.map((service: string, index: number) => (
           <div
-            className='text-black flex items-center'
+            className='text-theme flex items-center'
             key={`${service}-${index}`}
           >
             <Text

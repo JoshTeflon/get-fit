@@ -1,4 +1,4 @@
-import { IconComponent, ImageSlideProps, TitleContent } from './types';
+import { IconComponent, ImageSlideProps, QouteContent, TitleContent } from './types';
 import { Facebook, Instagram, Twitter } from '@/components/icons';
 import ProgramRectangle1 from '@/assets/ProgramRectangle1.png';
 import ProgramRectangle2 from '@/assets/ProgramRectangle2.png';
@@ -6,6 +6,8 @@ import ProgramRectangle3 from '@/assets/ProgramRectangle3.png';
 import InstaRectangle1 from '@/assets/InstaRectangle1.png';
 import InstaRectangle2 from '@/assets/InstaRectangle2.png';
 import InstaRectangle3 from '@/assets/InstaRectangle3.png';
+import Ellipse1 from '@/assets/Ellipse1.png';
+import Ellipse2 from '@/assets/Ellipse2.png';
 
 export const navItems: string[] = ['about me', 'programs', 'testimonials'];
 
@@ -67,6 +69,21 @@ export const testimonialsHeader: TitleContent = {
   content: 'At the heart of every successful fitness journey are the words of those who have experienced the transformative power of dedicated training and guidance. Here\'s what some of my clients have to say about their experiences.'
 };
 
+export const testimonialList: QouteContent[] = [
+  {
+    comment: 'I was initially hesitant to embark on my fitness journey, but HERCULES made me feel comfortable and supported every step of the way. HIS personalized approach and motivational guidance have been instrumental in my progress.',
+    imgSrc: Ellipse1,
+    name: 'Sarah Robinson',
+    role: 'Fitness Student'
+  },
+  {
+    comment: 'I\'ve worked with other trainers in the past, but none have compared to the level of professionalism and knowledge that HERCULES brings to the table. HIS customized workouts and constant encouragement have pushed me beyond my limits.',
+    imgSrc: Ellipse2,
+    name: 'Timothy Smith',
+    role: 'Fitness Student'
+  },
+];
+
 export const socialsHeader: TitleContent = {
   title: 'Instagram',
   content: 'Stay connected and join me on an inspiring journey toward health, wellness, and fitness on Instagram! Follow along for daily motivation, workout tips, nutritional insights.'
@@ -102,4 +119,4 @@ export const footerDetails: TitleContent[] = [
   }
 ];
 
-export const socialIcons: IconComponent[] = [Facebook, Twitter, Instagram]
+export const socialIcons: IconComponent[] = [Facebook, Twitter, Instagram];

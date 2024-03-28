@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className='side-space my-8'>
       <div
-        className='flex flex-col lg:flex-row items-center lg:items-start justify-between space-y-5 lg:space-y-0 pt-12 pb-8 lg:py-16 lg:px-4 xl:px-16 border-t-[0.5px] border-b-[0.5px] lg:border-b-0 border-white'
+        className='flex flex-col lg:flex-row items-center lg:items-start justify-between space-y-5 lg:space-y-0 pt-12 pb-8 lg:py-16 lg:px-4 xl:px-16 border-t-[0.5px] border-b-[0.5px] lg:border-b-0 border-text'
       >
         <div className='relative w-12 h-16'>
           <Image
@@ -34,7 +34,7 @@ const Footer = () => {
                 >{detail?.title}</Text>
                 <Text
                   as='p'
-                  className='text-white/70'
+                  className='text-text/70'
                 >{detail?.content}</Text>
               </div>
             ))
@@ -45,7 +45,7 @@ const Footer = () => {
             socialIcons?.map((Icon: IconComponent, idx: number) => (
               <div
                 key={idx}
-                className='bg-white text-black w-[1.875rem] h-[1.875rem] flex items-center justify-center'
+                className='bg-text text-theme w-[1.875rem] h-[1.875rem] flex items-center justify-center'
               >
                 <Icon />
               </div>
