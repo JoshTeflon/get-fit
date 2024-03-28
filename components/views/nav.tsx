@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { tomorrow } from '@/app/layout';
+import { tomorrow } from '@/utils/fonts';
 import { navItems } from '@/utils/data';
 import { Button, Text } from '../interface';
 

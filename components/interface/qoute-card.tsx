@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import classnames from 'classnames';
-import { tomorrow } from '@/app/layout';
+import { tomorrow } from '@/utils/fonts';
 import { QouteContent } from '@/utils/types';
 import { SingleQoute } from '../icons';
 import { Text } from '../interface';

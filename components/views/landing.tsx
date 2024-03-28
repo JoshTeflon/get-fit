@@ -1,7 +1,7 @@
 // import Image from 'next/image';
 import Image from 'next/image';
 
-import { tomorrow, dm_sans } from '@/app/layout';
+import { tomorrow, dm_sans } from '@/utils/fonts';
 import { Text } from '../interface';
 
 const Landing = () => {
