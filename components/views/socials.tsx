@@ -1,4 +1,4 @@
-import { tomorrow } from '@/app/layout';
+import { tomorrow } from '@/utils/fonts';
 import { socialsHeader, socialsSlider } from '@/utils/data';
 import { ImageSlideProps } from '@/utils/types';
 import { ImageCard, SectionContent, Text } from '../interface';

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { tomorrow } from '@/app/layout';
+import { tomorrow } from '@/utils/fonts';
 import { footerDetails, socialIcons } from '@/utils/data';
 import { IconComponent, TitleContent } from '@/utils/types';
 import { Text } from '../interface';

@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-import { Tomorrow, Raleway, DM_Sans } from "next/font/google";
-import "./globals.css";
 
-export const tomorrow = Tomorrow({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
-export const raleway = Raleway({ subsets: ["latin"], weight: ["400", "500", "600"] });
-export const dm_sans = DM_Sans({ subsets: ["latin"], weight: "500" });
+import { raleway } from "@/utils/fonts";
+import "./globals.css";
 
 // export const metadata: Metadata = {
 const metadata: Metadata = {

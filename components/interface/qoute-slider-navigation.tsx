@@ -1,5 +1,5 @@
 import React from 'react';
-import { dm_sans } from '@/app/layout';
+import { dm_sans } from '@/utils/fonts';
 import { Text } from '../interface';
 import { CaretLeft, CaretRight } from '../icons';
 

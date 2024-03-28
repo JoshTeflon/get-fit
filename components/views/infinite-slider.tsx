@@ -1,4 +1,4 @@
-import { tomorrow } from '@/app/layout';
+import { tomorrow } from '@/utils/fonts';
 import { programServices } from '@/utils/data';
 import { Text } from '../interface';
 import { CrossX } from '../icons';

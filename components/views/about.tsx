@@ -1,4 +1,4 @@
-import { tomorrow, raleway } from '@/app/layout';
+import { tomorrow, raleway } from '@/utils/fonts';
 import { TitleContent } from '@/utils/types';
 import { aboutContent, aboutStats } from '@/utils/data';
 import { SectionContent, Text, ClippedImage } from '../interface';

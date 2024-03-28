@@ -2,7 +2,7 @@ import React from 'react';
 import Image, { ImageProps } from 'next/image';
 import classnames from 'classnames';
 import { Text } from '.';
-import { raleway, tomorrow } from '@/app/layout';
+import { raleway, tomorrow } from '@/utils/fonts';
 
 interface ImageCardProps extends ImageProps {
   header?: string
