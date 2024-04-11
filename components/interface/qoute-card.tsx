@@ -20,39 +20,42 @@ const QouteCard: React.FC<QouteCardProps> = ({
   className
 }) => {
   return (
-    <div className={classnames(className, 'w-full space-y-5 md:space-y-6')}>
-      <SingleQoute className='w-10' />
-      <div
-        className='text-ellipsis line-clamp-6'
-      >
-        <Text
-          as='h3'
-          size='2xl'
-          className={`${tomorrow.className} text-theme/80 font-medium uppercase !leading-relaxed`}
+    <div className={classnames(className, 'qoute-card relative w-full cursor-pointer')}>
+      <div className='relative w-full space-y-5 md:space-y-6'>
+        <SingleQoute className='w-10' />
+        <div
+          className='text-ellipsis line-clamp-6'
         >
-          {comment}
-        </Text>
-      </div>
-      <div className='flex items-center space-x-4'>
-        <Image
-          src={imgSrc}
-          alt={`${name}-${role}`}
-          className='w-20 h-20 rounded-full'
-        />
-        <div className='capitalize'>
           <Text
-            as='h4'
-            className='font-semibold mb-0.5'
+            as='h3'
+            size='2xl'
+            className={`${tomorrow.className} text-theme/80 font-medium uppercase !leading-relaxed`}
           >
-            {name}
+            {comment}
           </Text>
-          <Text
-            as='p'
-            size='sm'
-            className='text-theme/70'
-          >
-            {role}
-          </Text>
+        </div>
+        <div className='flex items-center space-x-4'>
+          <Image
+            src={imgSrc}
+            alt={`${name}-${role}`}
+            className='w-16 h-16 rounded-full'
+          />
+          <div className='capitalize'>
+            <Text
+              as='h4'
+              size='sm'
+              className='font-semibold mb-px'
+            >
+              {name}
+            </Text>
+            <Text
+              as='p'
+              size='sm'
+              className='text-theme/70'
+            >
+              {role}
+            </Text>
+          </div>
         </div>
       </div>
     </div>

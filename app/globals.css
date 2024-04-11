@@ -70,4 +70,13 @@
   .scrolling-wrapper {
     -webkit-overflow-scrolling: touch;
     }
+
+  .qoute-card::before {
+    @apply content-[''] absolute bg-primary -top-4 -bottom-6 -left-8 -right-8 opacity-0;
+    transition: opacity 0.6s ease;
+  }
+
+  .qoute-card:hover::before {
+    @apply opacity-100;
+  }
 }
